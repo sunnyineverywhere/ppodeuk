@@ -8,7 +8,14 @@ import 'Task/TaskDetail.dart';
 import 'Task/TaskList.dart';
 import 'Preferences/Preferences.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+          brightness: Brightness.light,
+          primaryColor: Colors.blueGrey,
+          accentColor: Colors.amber),
+      home: MyApp(),
+    ));
 
 class MyApp extends StatelessWidget {
   @override
@@ -22,6 +29,8 @@ class MyApp extends StatelessWidget {
 }
 
 class Mainpage extends StatelessWidget {
+  List todos = List();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -29,7 +38,7 @@ class Mainpage extends StatelessWidget {
           title: Text('Ppodeuk'),
           centerTitle: true, // 중앙 정렬
           elevation: 0.0),
-      drawer: Drawer(
+      endDrawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
           children: <Widget>[
@@ -92,6 +101,13 @@ class Mainpage extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(onPressed: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => TaskDetail()),
+        );
+      }),
+      body: ListView.builder(itemBuilder: ,
     );
   }
 }
