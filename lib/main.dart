@@ -28,8 +28,24 @@ class MyApp extends StatelessWidget {
   }
 }
 
+class TodoTile extends StatelessWidget {
+  TodoTile(this._todoItem);
+
+  final TodoItem _todoItem;
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      leading: Icon(Icons.task_alt_outlined),
+      title: Text(_todoItem.name),
+    );
+  }
+}
+
 class Mainpage extends StatelessWidget {
-  List todos = List();
+  List<TodoItem> todos = [];
+
+  final List<String> names = ['1', '2', '3'];
 
   @override
   Widget build(BuildContext context) {
@@ -107,7 +123,12 @@ class Mainpage extends StatelessWidget {
           MaterialPageRoute(builder: (context) => TaskDetail()),
         );
       }),
-      body: ListView.builder(itemBuilder: ,
+      body: ListView.builder(
+          padding: const EdgeInsets.all(8),
+          itemCount: todos.length,
+          itemBuilder: (BuildContext ctx, int idx) {
+            return TodoTile(todos[idx]);
+          }),
     );
   }
 }

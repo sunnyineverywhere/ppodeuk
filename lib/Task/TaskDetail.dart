@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+class TodoItem {
+  String name = '';
+}
+
 class TaskDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
