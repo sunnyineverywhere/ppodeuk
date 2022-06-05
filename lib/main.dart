@@ -29,85 +29,86 @@ class MyApp extends StatelessWidget {
 }
 
 class Mainpage extends StatelessWidget {
-  List todos = List();
+  var todos = List<dynamic>;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          title: Text('Ppodeuk'),
-          centerTitle: true, // 중앙 정렬
-          elevation: 0.0),
-      endDrawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            ListTile(
-              leading: Icon(
-                Icons.home,
-                color: Colors.grey[850],
+        appBar: AppBar(
+            title: Text('Ppodeuk'),
+            centerTitle: true, // 중앙 정렬
+            elevation: 0.0),
+        endDrawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: <Widget>[
+              ListTile(
+                leading: Icon(
+                  Icons.home,
+                  color: Colors.grey[850],
+                ),
+                title: Text('MY PAGE'),
+                onTap: () {
+                  print('Home is clicked');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Mainpage()),
+                  );
+                },
               ),
-              title: Text('MY PAGE'),
-              onTap: () {
-                print('Home is clicked');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Mainpage()),
-                );
-              },
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.group,
-                color: Colors.grey[850],
+              ListTile(
+                leading: Icon(
+                  Icons.group,
+                  color: Colors.grey[850],
+                ),
+                title: Text('GROUP'),
+                onTap: () {
+                  print('Setting is clicked');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => GroupPage()),
+                  );
+                },
               ),
-              title: Text('GROUP'),
-              onTap: () {
-                print('Setting is clicked');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => GroupPage()),
-                );
-              },
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.analytics_rounded,
-                color: Colors.grey[850],
+              ListTile(
+                leading: Icon(
+                  Icons.analytics_rounded,
+                  color: Colors.grey[850],
+                ),
+                title: Text('PREFERENCES'),
+                onTap: () {
+                  print('PREFERENCES');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => Preferences()),
+                  );
+                },
               ),
-              title: Text('PREFERENCES'),
-              onTap: () {
-                print('PREFERENCES');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => Preferences()),
-                );
-              },
-            ),
-            ListTile(
-              leading: Icon(
-                Icons.task_alt_rounded,
-                color: Colors.grey[850],
+              ListTile(
+                leading: Icon(
+                  Icons.task_alt_rounded,
+                  color: Colors.grey[850],
+                ),
+                title: Text('+ NEW TASK'),
+                onTap: () {
+                  print('+ NEW TASK');
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => TaskDetail()),
+                  );
+                },
               ),
-              title: Text('+ NEW TASK'),
-              onTap: () {
-                print('+ NEW TASK');
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => TaskDetail()),
-                );
-              },
-            ),
-          ],
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(onPressed: () {
-        Navigator.push(
-          context,
-          MaterialPageRoute(builder: (context) => TaskDetail()),
-        );
-      }),
-      body: ListView.builder(itemBuilder: ,
-    );
+        floatingActionButton: FloatingActionButton(onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => TaskDetail()),
+          );
+        }));
+    /*
+      body: ListView.builder(itemBuilder: ()
+    );*/
   }
 }
