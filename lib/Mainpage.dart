@@ -15,15 +15,10 @@ class MyApp extends StatelessWidget {
 }
 
 class TodoTile extends StatelessWidget {
-  TodoTile(this._todoItem);
-
-  final TodoItem _todoItem;
-
   @override
   Widget build(BuildContext context) {
     return ListTile(
       leading: Icon(Icons.task_alt_outlined),
-      title: Text(_todoItem.name),
     );
   }
 }
@@ -31,8 +26,6 @@ class TodoTile extends StatelessWidget {
 class Mainpage extends StatelessWidget {
   final List<String> names = ['1', '2', '3'];
   final List<String> time = ['2020-01-01', '2020-02-01', '2020-01-03'];
-
-  List<TodoItem> todos = [];
 
   @override
   Widget build(BuildContext context) {
@@ -110,12 +103,6 @@ class Mainpage extends StatelessWidget {
           MaterialPageRoute(builder: (context) => TaskDetail()),
         );
       }),
-      body: ListView.builder(
-          padding: const EdgeInsets.all(8),
-          itemCount: todos.length,
-          itemBuilder: (BuildContext ctx, int idx) {
-            return TodoTile(todos[idx]);
-          }),
     );
   }
 }
