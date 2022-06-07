@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hciproject/components/custom_text_form_field.dart';
+import 'package:hciproject/group/GroupInvite.dart';
 import 'package:hciproject/size.dart';
 import '../Mainpage.dart';
 
@@ -23,7 +24,7 @@ class CustomForm extends StatelessWidget {
               // if (_formKey.currentState!.validate()) {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Mainpage()),
+                MaterialPageRoute(builder: (context) => groupInvite()),
               );
               // }
             },
