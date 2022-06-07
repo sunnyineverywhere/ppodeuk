@@ -93,6 +93,31 @@ class Preferences extends StatelessWidget {
                         );
                       },
                     ),
+                  )),
+              Container(
+                  margin: const EdgeInsets.only(bottom: 30),
+                  child: ButtonTheme(
+                    //height: 120,
+                    child: RaisedButton(
+                      child: Text(
+                        'See All',
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                        ),
+                      ),
+                      color: Colors.white,
+                      onPressed: () {
+                        print('See All');
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => Preferences_never(
+                                    title: '',
+                                  )),
+                        );
+                      },
+                    ),
                   ))
             ]));
   }
