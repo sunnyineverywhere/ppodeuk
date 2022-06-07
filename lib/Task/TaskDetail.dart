@@ -5,7 +5,6 @@ import 'package:table_calendar/table_calendar.dart';
 
 class TaskDetail extends StatefulWidget {
   // const TaskDetail({Key? key}) : super(key: key);
-
   @override
   State<TaskDetail> createState() => _TaskDetailState();
 }
