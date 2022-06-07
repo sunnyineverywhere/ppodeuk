@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
+import 'package:flutter/material.dart';
 import 'package:hciproject/Preferences/PreferencesGara.dart';
-import 'package:hciproject/Task/TaskDetail2.dart';
-import 'Task/TaskDetail.dart';
-import 'Task/TaskList.dart';
-import 'Preferences/Preferences.dart';
-import 'group/GroupPage.dart';
+
+import '../Mainpage.dart';
+import '../Preferences/Preferences.dart';
+import '../group/GroupPage.dart';
+import 'TaskDetail.dart';
 
 class MyApp extends StatelessWidget {
   @override
@@ -25,25 +27,14 @@ class Task {
   Task(this.title, this.duedate, this.owner);
 }
 
-class TodoTile extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return ListTile(
-      leading: Icon(Icons.task_alt_outlined),
-    );
-  }
-}
-
-class Mainpage extends StatelessWidget {
+class TaskListGara extends StatelessWidget {
   final _tasks = <Task>[];
 
   @override
   Widget build(BuildContext context) {
-    Task task1 = new Task("할일 1", DateTime.utc(2022, 06, 07), "10:11:23");
-    Task task2 = new Task("할일 2", DateTime.utc(2022, 06, 09), "13:22:31");
+    Task task1 = new Task("할일 1", DateTime.utc(2022, 01, 01), "10:11:23");
 
     _tasks.add(task1);
-    _tasks.add(task2);
 
     return Scaffold(
       appBar: AppBar(
@@ -131,8 +122,7 @@ class Mainpage extends StatelessWidget {
                       onPressed: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(
-                              builder: (context) => TaskDetail2()),
+                          MaterialPageRoute(builder: (context) => TaskDetail()),
                         );
                       },
                       style: TextButton.styleFrom(

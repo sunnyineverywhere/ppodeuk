@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hciproject/group/GroupPage.dart';
 
 import '../Mainpage.dart';
 
@@ -36,7 +37,7 @@ class _groupInviteByCodeState extends State<groupInviteByCode> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Mainpage()),
+                      MaterialPageRoute(builder: (context) => GroupPage()),
                     );
                   },
                   child: Text("Confirm")),

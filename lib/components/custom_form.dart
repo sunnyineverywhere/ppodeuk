@@ -30,6 +30,19 @@ class CustomForm extends StatelessWidget {
             },
             child: Text("Login"),
           ),
+          SizedBox(height: medium_gap),
+          TextButton(
+            onPressed: () {
+              // 3. 유효성 검사
+              // if (_formKey.currentState!.validate()) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => groupInvite()),
+              );
+              // }
+            },
+            child: Text("Sign Up"),
+          ),
         ],
       ),
     );

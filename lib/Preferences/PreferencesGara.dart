@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
+import 'package:hciproject/Preferences/personal/Preferencespersonal.dart';
 import 'Preferences_good.dart';
 import 'Preferences_notbad.dart';
 import 'Preferences_never.dart';
 
-class Preferences extends StatelessWidget {
+class PreferencesGara extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,7 +88,7 @@ class Preferences extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => Preferences_never(
+                              builder: (context) => Preferencespersonal(
                                     title: '',
                                   )),
                         );

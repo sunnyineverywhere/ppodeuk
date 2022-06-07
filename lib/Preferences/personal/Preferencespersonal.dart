@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 
-class Preferences_notbad extends StatefulWidget {
+class Preferencespersonal extends StatefulWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Preferences_notbad"),
+        title: Text("Preferences_never"),
       ),
       body: Center(
-        child: Text('Preferences_notbad'),
+        child: Text('Preferences_never'),
       ),
     );
   }
 
-  Preferences_notbad({Key? key, required this.title}) : super(key: key);
+  Preferencespersonal({Key? key, required this.title}) : super(key: key);
 
   final String title;
 
@@ -21,11 +21,10 @@ class Preferences_notbad extends StatefulWidget {
   _CheckBoxInListViewState createState() => _CheckBoxInListViewState();
 }
 
-class _CheckBoxInListViewState extends State<Preferences_notbad> {
+class _CheckBoxInListViewState extends State<Preferencespersonal> {
   //bool _isChecked = false;
 
   List<String> _texts = [
-    /*
     "설거지하기",
     "세탁기 돌리기",
     "빨래 널기",
@@ -33,7 +32,6 @@ class _CheckBoxInListViewState extends State<Preferences_notbad> {
     "청소기 돌리기",
     "물걸레질 하기",
     "식사 준비(수저 놓기, 반찬 꺼내기 등)",
-    */
     "음식 만들기(요리, 조리)",
     "분리수거하기",
     "음식물쓰레기 버리기"
@@ -51,7 +49,7 @@ class _CheckBoxInListViewState extends State<Preferences_notbad> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Preferences_notbad'),
+          title: Text('Preferences_never'),
         ),
         body: Column(children: [
           Expanded(

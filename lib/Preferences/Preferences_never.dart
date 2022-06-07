@@ -25,16 +25,20 @@ class _CheckBoxInListViewState extends State<Preferences_never> {
   //bool _isChecked = false;
 
   List<String> _texts = [
+    /*
     "설거지하기",
     "세탁기 돌리기",
     "빨래 널기",
+    */
     "빨래 개기",
     "청소기 돌리기",
     "물걸레질 하기",
+    /*
     "식사 준비(수저 놓기, 반찬 꺼내기 등)",
     "음식 만들기(요리, 조리)",
     "분리수거하기",
     "음식물쓰레기 버리기"
+    */
   ];
 
   late List<bool> _isChecked;

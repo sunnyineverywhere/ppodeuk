@@ -28,6 +28,7 @@ class _CheckBoxInListViewState extends State<Preferences_good> {
     "설거지하기",
     "세탁기 돌리기",
     "빨래 널기",
+    /*
     "빨래 개기",
     "청소기 돌리기",
     "물걸레질 하기",
@@ -35,6 +36,7 @@ class _CheckBoxInListViewState extends State<Preferences_good> {
     "음식 만들기(요리, 조리)",
     "분리수거하기",
     "음식물쓰레기 버리기"
+    */
   ];
 
   late List<bool> _isChecked;
