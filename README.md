@@ -20,8 +20,9 @@ samples, guidance on mobile development, and a full API reference.
 |:---:|:---:|:---:|:---:|
 |<b>Seungeon Kim</b>|<b>Seonui Lee</b>|<b>Soohyun Lee</b>|<b>Juyeon Lee</b>|
 |PPT&Presentation|App Development|Walkthrough Video|App Development|
-<br>
 
+## Prototype
+[LINK](https://share.proto.io/G34VDT/)
 ## In App Image
 
 ## Final Presentation Video
