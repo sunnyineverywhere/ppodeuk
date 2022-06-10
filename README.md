@@ -15,14 +15,15 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## TEAM EUI
-<br>
+## TEAM9. EUI
+
+|[@seung-on](https://github.com/seung-eon)|[@topnotchsh](http://github.com/topnotchsh)|[@sunnyiseverywhere](https://github.com/sunnyineverywhere)|[@Yongmalyang](https://github.com/Yongmalyang)|
 |:---:|:---:|:---:|:---:|
 |<b>Seungeon Kim</b>|<b>Soohyun Lee</b>|<b>Sunny Lee</b>|<b>Juyeon Lee</b>|
 |PPT&Presentation|Walkthrough Video|App Development|App Development|
 <br>
 
 ## Final Presentation Video
-[![PPODEUK]]((https://youtu.be/uSS8On34FHA))
+[LINK](https://youtu.be/uSS8On34FHA)
 <br>
 
