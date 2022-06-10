@@ -18,7 +18,7 @@ samples, guidance on mobile development, and a full API reference.
 
 |[@seung-on](https://github.com/seung-eon)|[@sunnyiseverywhere](https://github.com/sunnyineverywhere)|[@topnotchsh](http://github.com/topnotchsh)|[@Yongmalyang](https://github.com/Yongmalyang)|
 |:---:|:---:|:---:|:---:|
-|<b>Seungeon Kim</b>|<b>Sunny Lee</b>|<b>Soohyun Lee</b>|<b>Juyeon Lee</b>|
+|<b>Seungeon Kim</b>|<b>Seonui Lee</b>|<b>Soohyun Lee</b>|<b>Juyeon Lee</b>|
 |PPT&Presentation|App Development|Walkthrough Video|App Development|
 <br>
 
